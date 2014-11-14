@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab6d2b76-b39c-46d6-aeca-b4616fc95b3d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sitemap.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="www.iws" />
@@ -26,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8235294" vertical-offset="6820" max-vertical-offset="7500">
-              <caret line="492" column="36" selection-start-line="492" selection-start-column="36" selection-end-line="492" selection-end-column="36" />
+            <state vertical-scroll-proportion="-17.708334" vertical-offset="6970" max-vertical-offset="7650">
+              <caret line="493" column="9" selection-start-line="493" selection-start-column="9" selection-end-line="493" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sitemap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06392045" vertical-offset="0" max-vertical-offset="704">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -140,6 +151,7 @@
         <option value="$PROJECT_DIR$/css/overrides.css" />
         <option value="$PROJECT_DIR$/CNAME" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sitemap.xml" />
       </list>
     </option>
   </component>
@@ -590,8 +602,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8235294" vertical-offset="6820" max-vertical-offset="7500">
-          <caret line="492" column="36" selection-start-line="492" selection-start-column="36" selection-end-line="492" selection-end-column="36" />
+        <state vertical-scroll-proportion="-17.708334" vertical-offset="6970" max-vertical-offset="7650">
+          <caret line="493" column="9" selection-start-line="493" selection-start-column="9" selection-end-line="493" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06392045" vertical-offset="0" max-vertical-offset="704">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
           <folding />
         </state>
       </provider>
