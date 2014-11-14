@@ -1,74 +1,495 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<html lang="en">
+<head>
+<meta charset="utf-8">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="img/ico/favicon.ico">
+<title>Notion Labs - Ruby on Rails, Ember and Mobile Experts</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- Font Awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Carousel -->
+<link href="css/carousel.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+
+<!-- Animate -->
+<link href="css/animate.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/overrides.css" rel="stylesheet">
+
+<!-- Change skin color here (choose from css folder) -->
+<link href="css/skin-red.css" rel="stylesheet">
+
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".main_h">
 
-    <title>Notionlabs.github.io by NotionLabs</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Notionlabs.github.io</h1>
-        <h2>Cloud Development Perfected.</h2>
-        <a href="https://github.com/NotionLabs" class="button"><small>Follow me on</small>GitHub</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
+<!-- BEGIN HEADER
+================================================== -->
+<header class="main_h">
+	<div class="container">
+		<div class="row">
+			<a class="logo" href="#home">Notion Labs</a>
+			<div class="mobile-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav>
+			<ul class="nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#download">Download</a></li>
+				<li><a href="#pricePlans">Pricing</a></li>
+				<li><a href="#showcase">Showcase</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>			
+				<li><a href="#contact-page">Contact</a></li>
+			</ul>
+			</nav>
+		</div>	
+	</div>
+</header>
 
 
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+<!-- BEGIN HOME
+================================================== -->
+<section id="home" class="homepage">
+	<div class="section-overlay-home"></div>
+	<div id="logo" class="container">
+		<a href="#">
+			<img src="img/logo.png" alt="Apulum" class="wow fadeInDown animated" data-wow-delay="0.3s">
+		</a>
+	</div>
+	<div id="banners" class="owl-carousel owl-theme">
+		<div id="mobile">
+			<div class="container">
+				<div class="row">
 
-  
-  </body>
+					<div class="col-sm-5">
+						<img src="img/bg_iphone.png" class="img-responsive wow flipInY animated" alt="">
+					</div>
+
+					<div class="col-sm-7 text-right">
+						<div class="rotate-description wow fadeInLeft animated">
+							<span class="bg">BRISTOL</span>
+						</div>
+						<div>
+							<span class="lead highlight">Ruby on Rails, iOS, Android, Knockout, MiracleGrow&#8482;</span>
+						</div>
+						<div class="small-text wow bounceIn animated">
+							<span>
+							The Bristol Global Elite Mobile app assists relocating employees and their family navigate every stage of their relocation by connecting employees, in real-time, to their relocation services, information, dates and contacts. </span>
+						</div>
+						<div class="home-buttons">
+							<a href="http://www.bristolglobal.com/elitemobileintro/" target="_blank" class="btn btn-primary btn-lg wow slideInLeft animated"><i class="fa fa-globe"></i> View project</a>
+							<a href="#features" class="btn btn-default btn-lg wow slideInRight animated"><i class="fa fa-search"></i> Learn more</a>
+						</div>
+						<ul class="icos unstyle">
+							<li><a href="https://itunes.apple.com/US/app/id838705599" target="_blank" data-toggle="tooltip" data-original-title="Apple" class="wow bounceIn animated" data-wow-delay="1s"><i class='fa fa-apple'></i></a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.notionlabs.elite" target="_blank" data-toggle="tooltip" data-original-title="Android" class="wow bounceIn animated" data-wow-delay="1.2s"><i class='fa fa-android'></i></a></li>
+						</ul>
+					</div>
+
+				</div><!-- end .row -->
+			</div>
+		</div>
+		<div id="ipad">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-5">
+						<img src="img/ir_ipad.png" class="img-responsive wow flipInY animated" alt="">
+					</div>
+
+					<div class="col-sm-7 text-right">
+						<div class="rotate-description wow fadeInLeft animated">
+							<span class="ir">Insight Remote</span>
+						</div>
+						<div>
+							<span class="lead highlight">iOS, Ruby on Rails, Ember, RESTful API</span>
+						</div>
+						<div class="small-text wow bounceIn animated">
+							<span>Insight Remote helps Oil &amp; Gas operators and service companies optimize field operations and drive operational efficiencies. The platform helps eliminate paperwork and provides real-time insight throughout the organization into 24x7 operations
+							</span>
+						</div>
+						<div class="home-buttons">
+							<a href="http://www.insightremote.com" target="_blank" class="btn btn-primary btn-lg wow slideInLeft animated"><i class="fa fa-globe"></i> View Project</a>
+							<a href="#features" class="btn btn-default btn-lg wow slideInRight animated"><i class="fa fa-search"></i> Learn more</a>
+						</div>
+					</div>
+				</div><!-- end .row -->
+			</div>
+		</div>
+		<div id="ember">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-5">
+						<img src="img/me_macbook.png" class="wow flipInY animated" alt="">
+					</div>
+
+					<div class="col-sm-7 text-right">
+						<div class="rotate-description wow fadeInLeft animated">
+							<span class="me"><STRONG>MOBILITY</STRONG>EMPOWERED</span>
+						</div>
+						<div>
+							<span class="lead highlight">Ruby on Rails, Ember, Ember Data</span>
+						</div>
+						<div class="small-text wow bounceIn animated">
+							<span>
+							Mobility Empowered enables employees to craft their global relocation experience. The e-commerce platform integrates best-in-class country and regional service providers into a global value chain enabling real-time collaboration.</span>
+						</div>
+						<div class="home-buttons">
+							<a href="http://www.mobilityempowered.com" class="btn btn-primary btn-lg wow slideInLeft animated"><i class="fa fa-link"></i> View Project</a>
+							<a href="#features" class="btn btn-default btn-lg wow slideInRight animated"><i class="fa fa-link"></i> Learn more</a>
+						</div>
+					</div>
+
+				</div><!-- end .row -->
+			</div>
+		</div>
+	</div>
+	<a href="#features" class="introarrow">
+	<i class="fa fa-angle-double-down"></i>
+	</a>
+</section>
+<!-- end home -->
+
+
+<!-- BEGIN FEATURES
+================================================== -->
+<section id="features">
+	<div class="wrapsection">
+		<div class="container">
+			<div class="sectionhead">
+				<h1 class="heading">What We Do</h1>
+				<p class="lead">
+					Notion Labs envisions, designs and develops mobile and web applications that deliver unique experiences and drive business value.
+				</p>
+			</div>
+			<div class="row text-center">		
+				<div class="col-sm-4 feature-item wow flipInY animated" data-wow-delay="0.1s">
+					<div class="feature-icon">
+						<i class="fa fa-mobile fa-lg"></i>
+					</div>
+					<h4 class="uppercase">Mobile Applications</h4>
+					<p class="highlight lead">
+						Native & Hybrid - iOS & Android
+					</p>
+					<span class="sep"></span>
+					<p class="feature-lead">
+						Catalysts of unique experiences that drive higher engagement of and collaboration with employees and customers.
+					</p>
+				</div>
+				<div class="col-sm-4 feature-item wow flipInY animated" data-wow-delay="0.3s">
+					<div class="feature-icon">
+						<i class="fa fa-globe fa-lg"></i>
+					</div>
+					<h4 class="uppercase">Ambitious Web Applications</h4>
+					<p class="highlight lead">
+						Ruby on Rails, Ember & Meteor
+					</p>
+					<span class="sep"></span>
+					<p class="feature-lead">
+						Pioneers of emerging technologies that help clients challenge the status quo and transform their business and industry.
+					</p>
+				</div>
+				<div class="col-sm-4 feature-item wow flipInY animated" data-wow-delay="0.6s">
+					<div class="feature-icon">
+						<i class="fa fa-heart"></i>
+					</div>
+					<h4 class="uppercase">Implementation &amp; Integration</h4>
+					<p class="highlight lead">
+						Salesforce, APIs &amp; Equus
+					</p>
+					<span class="sep"></span>
+					<p class="feature-lead">
+						Experts in integrating and developing technologies that drive operational efficiencies and new business opportunities.
+					</p>
+				</div>
+			</div><!-- end .row -->
+		</div>
+	</div>
+</section>
+<!-- end features -->
+
+
+<!-- BEGIN DOWNLOAD
+================================================== -->
+<!--<section id="download" class="download whitetext">-->
+	<!--<div class="wrapsection">-->
+		<!--<div class="overlay highlightbg"></div>-->
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+				<!--<div class="col-md-6 wow bounceIn animated">-->
+					<!--<h2>Purchase our product right now!</h2>-->
+					<!--<p>-->
+						<!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.-->
+					<!--</p>-->
+					<!--<ul class="iconlist unstyle">-->
+							<!--<li>-->
+							<!--<h4><i class="fa fa-magic"></i>Winning Template Awards</h4>-->
+							<!--<p>-->
+								 <!--Suspendisse nisl sapien, mattis ut libero ut, placerat eleifend urna. Quisque commodo mattis ut libero ut, placerat eleifend urna. Quisque commodo-->
+							<!--</p>-->
+							<!--</li>-->
+							<!---->
+							<!---->
+							<!--<li>-->
+							<!--<h4><i class="fa fa-cog"></i>Best choice for your Web</h4>-->
+							<!--<p>-->
+								 <!--Quisque tempor convallis est ac viverra. Cras dictum arcu leo, commodo rhoncus turpis mattis ut libero ut, placerat eleifend urna. Quisque commodo.-->
+							<!--</li>-->
+						<!--</ul>-->
+					<!--<br/><a href="#" class="btn btn-lg btn-simple whitebg"><i class="fa fa-shopping-cart"></i> Purchase</a>-->
+				<!--</div>-->
+				<!--<div class="col-md-6">-->
+					<!--<img src="http://www.wowthemes.net/demo/apulum/img/wowthemes2.png" class="img-responsive wow flipInY animated" alt="">-->
+				<!--</div>-->
+			<!--</div>&lt;!&ndash; end .row &ndash;&gt;-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
+<!-- end download -->
+
+
+<!-- BEGIN PAGE DIVIDER
+================================================== -->
+<!--<div class="divider-area">-->
+	<!--<span class="icon">-->
+		<!--<a href="#screenshots"><i class="fa fa-camera highlight"></i></a>-->
+	<!--</span>-->
+<!--</div>-->
+<!-- END PAGE DIVIDER -->
+
+<!-- BEGIN SHOWCASE
+================================================== -->
+<!--<section id="showcase" class="text-center">-->
+	<!--<div class="wrapsection">-->
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+			<!--<div class="col-md-12">-->
+				<!--<div class="sectionhead">-->
+					<!--<h1 class="heading">Application Screenshots</h1>-->
+					<!--<p class="lead">-->
+						<!--Use this area to showcase screenshots of your app.<br>-->
+						<!--The structure is simply, just add your images and done!-->
+					<!--</p>-->
+				<!--</div>-->
+				<!--<div id="wowcarousel" class="owl-carousel">-->
+				<!---->
+					<!--&lt;!&ndash; item 1 &ndash;&gt;-->
+					<!--<div class="item">-->
+						<!--<img src="http://www.wowthemes.net/demo-vesta/wp-content/uploads/sites/12/2014/06/vestaportfolio6.jpg" alt="">-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash; item 2 &ndash;&gt;-->
+					<!--<div class="item">-->
+						<!--<img src="http://www.wowthemes.net/demo-vesta/wp-content/uploads/sites/12/2014/06/vestaportfolio5.jpg" alt="">-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash; item 3 &ndash;&gt;-->
+					<!--<div class="item">-->
+						<!--<img src="http://www.wowthemes.net/demo-vesta/wp-content/uploads/sites/12/2014/06/vestaportfolio21.jpg" alt="">-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash; item 4 &ndash;&gt;-->
+					<!--<div class="item">-->
+						<!--<img src="http://www.wowthemes.net/demo-vesta/wp-content/uploads/sites/12/2014/06/vestaportfolio4.jpg" alt="">-->
+					<!--</div>-->
+					<!--&lt;!&ndash; end item 4 &ndash;&gt;-->
+					<!---->
+				<!--</div>-->
+			<!--</div>-->
+			<!--</div>&lt;!&ndash; end row &ndash;&gt;-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
+<!-- END SHOWCASE -->
+
+<!-- BEGIN TESTIMONIALS
+================================================== -->
+<!--<section id="testimonials" class="testimonials whitetext">-->
+	<!--<div class="wrapsection">-->
+		<!--<div class="overlay"></div>-->
+		<!--<div class="container">-->
+			<!--<div class="row text-center">-->
+				<!--<div id="wowtestim" class="owl-carousel">-->
+				<!---->
+					<!--&lt;!&ndash; testimonial 1 &ndash;&gt;-->
+					<!--<div class="item">				-->
+						<!--<a class="client-image">				-->
+						<!--<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar4.png" class="avatar" alt="Client"/>-->
+						<!--</a>				-->
+						<!--<h1 class="client-name uppercase">Erny Keirstead </h1>				-->
+						<!--<h3 class="client-pos uppercase">Hypnos Theme </h3>				-->
+						<!--<p class="client-msg">-->
+							 <!--Great themes with equally amazing customer service to go with it. Very prompt responses and very knowledgable staff that truly cares about their customer. I stand 100% behind this website and will make sure to recommend it to my friends.-->
+						<!--</p>-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash; testimonial 2 &ndash;&gt;-->
+					<!--<div class="item">				-->
+						<!--<a class="client-image">				-->
+						<!--<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar2.png" class="avatar" alt="Client"/>-->
+						<!--</a>				-->
+						<!--<h1 class="client-name uppercase">Rania Macfarlane </h1>				-->
+						<!--<h3 class="client-pos uppercase">Apulum Theme </h3>-->
+						<!--<p class="client-msg">-->
+							 <!--This is a great theme for multipurpose use. Great features, catchy look. Also, I have on a few occasions needed to contact the support team, and they have been extremely helpful. I'm new to navigating these things so this has been invaluable!-->
+						<!--</p>-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash; testimonial 3 &ndash;&gt;-->
+					<!--<div class="item">				-->
+						<!--<a class="client-image">				-->
+						<!--<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar5.png" class="avatar" alt="Client"/>-->
+						<!--</a>				-->
+						<!--<h1 class="client-name uppercase">Sharl White </h1>				-->
+						<!--<h3 class="client-pos uppercase">Vesta Theme </h3>				-->
+						<!--<p class="client-msg">-->
+							 <!--The support... I can only say it's awesome. You make a product and you help people out any way you can even if it means that you have to log in on their dashboard to sort out any problems that customer might have. Simply Outstanding!-->
+						<!--</p>-->
+					<!--</div>-->
+					<!--&lt;!&ndash; end testimonial 3 &ndash;&gt;-->
+					<!---->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
+<!-- END TESTIMONIALS -->
+
+<!-- BEGIN PRESENTATION
+================================================== -->
+<!--<section id="presentation">-->
+	<!--<div class="wrapsection">-->
+		<!--<div class="container">-->
+			<!--<div class="sectionhead">-->
+				<!--<h1>Perfect Marketing Theme</h1>-->
+				<!--<div class="smallsep">-->
+				<!--</div>-->
+				<!--<p class="lead">-->
+					 <!--We are especially beautiful and fully responsive.-->
+				<!--</p>-->
+			<!--</div>-->
+			<!--<p class="max80 wow bounceIn animated" data-wow-delay="0.1s">-->
+				 <!--Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor quis lacinia faucibus, orci ipsum gravida tortor.-->
+			<!--</p>-->
+			<!--<br/><img src="http://www.wowthemes.net/demo/calypso/img/demo/desktop3.png" alt="" class="img-responsive pxauto wow bounceIn animatedUp" style="margin-bottom:-60px;" data-wow-delay="0.2s">-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
+<!-- END PRESENTATION -->
+
+
+<!-- BEGIN CONTACT-PAGE
+================================================== -->
+<section id="contact-page" class="contact-page whitetext">
+		<div class="wrapsection">
+			<div class="overlay highlightbg"></div>	
+			<div class="container">
+			
+				<div class="sectionhead">
+					<h1>Contact Us</h1>
+					<div class="smallsep">
+					</div>
+					<p class="lead">
+						We are excited to speak with you about your technology vision.<br/>
+						Use the form below and we will respond to your inquiry shortly.
+					</p>
+				</div>
+				
+				<!-- begin contact form -->
+				<form action="//forms.brace.io/info@notionlabs.com" id="contact" name="contact" method="post">
+					<fieldset>
+						<div class="row">
+							<div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+								<label for="name">Name<span class="required">*</span></label>
+								<input type="text" name="name" id="name" size="30" value="" required/>
+							</div>
+							<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+								<label for="email">Email<span class="required">*</span></label>
+								<input type="text" name="_replyto" id="email" size="30" value="" required/>
+							</div>
+							<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.5s" data-wow-duration="2s">
+								<label for="phone">Phone</label>
+								<input type="text" name="phone" id="phone" size="30" value=""/>
+							</div>
+						</div>
+						<div class="wow fadeIn animated" data-wow-delay="0.8s" data-wow-duration="1.5" style="margin-top:15px;">
+							<label for="message">Message<span class="required">*</span></label>
+							<textarea name="body" id="message" required></textarea>
+						</div>
+						<input type="hidden" name="_next" value="//notionlabs.com"/>
+						<input type="hidden" name="_subject" value="Contact from Website"/>
+						<div class="wow fadeIn animated" data-wow-delay="1s" data-wow-duration="2s">
+							<input id="submit" type="submit" name="submit" value="Send"/>
+						</div>
+					</fieldset>
+				</form>
+				<!-- end contact form -->
+			</div>
+		</div>	
+</section><!-- END CONTACT SECTION -->
+
+<!-- BEGIN FOOTER
+================================================== -->
+<div id="footer" class="footer">
+<a href="#home" class="footerarrow">
+<i class="fa fa-angle-double-up"></i>
+</a>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<!--<ul class="social-icons">-->
+				<!--<li class="wow bounceIn animated" data-wow-delay="0.1s"><a href="#."><i class="fa fa-facebook"></i></a></li>-->
+				<!--<li class="wow bounceIn animated" data-wow-delay="0.2s"><a href="#."><i class="fa fa-twitter"></i></a></li>-->
+				<!--<li class="wow bounceIn animated" data-wow-delay="0.3s"><a href="#."><i class="fa fa-google-plus"></i></a></li>-->
+				<!--<li class="wow bounceIn animated" data-wow-delay="0.4s"><a href="#."><i class="fa fa-dribbble"></i></a></li>-->
+				<!--<li class="wow bounceIn animated" data-wow-delay="0.5s"><a href="#."><i class="fa fa-pinterest"></i></a></li>-->
+			<!--</ul>-->
+			<p class="copyright">
+				 &copy;2014 Notion Labs Inc. All rights reserved.
+			</p>
+			
+		</div>
+	</div>
+</div>
+</div>
+<!-- END FOOTER
+================================================== -->
+
+<!-- JavaScript placed at the end of the document so the pages load faster
+================================================== -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/carousel.min.js"></script>
+<script scr="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/common.js"></script>
+</body>
 </html>
